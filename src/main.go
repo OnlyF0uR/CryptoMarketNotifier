@@ -147,7 +147,7 @@ func main() {
 			}
 		}
 
-		// time.Sleep(time.Hour)
-		time.Sleep(15 * time.Second)
+		time.Sleep(time.Hour)
+		// time.Sleep(15 * time.Second)
 	}
 }
