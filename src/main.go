@@ -70,7 +70,7 @@ func main() {
 		})
 	})
 
-	currencies := [4]string{"BTC", "ETH", "LTC", "XMR"}
+	currencies := [5]string{"BTC", "ETH", "LTC", "XMR", "SOL"}
 	lastPrices := make(map[string]float64)
 
 	fmt.Println("===================\nStarting prices:")
@@ -136,6 +136,11 @@ func main() {
 								Label: "XMR",
 								Style: discordgo.LinkButton,
 								URL:   "https://coinmarketcap.com/currencies/monero/",
+							},
+							discordgo.Button{
+								Label: "SOL",
+								Style: discordgo.LinkButton,
+								URL:   "https://coinmarketcap.com/currencies/solana/",
 							},
 						},
 					},
